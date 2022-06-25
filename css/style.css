@@ -1,0 +1,114 @@
+:root{
+  --navBarButtonTransition:0.7s
+}
+#mySidenav{
+  position: fixed;
+  left: -250px;
+  top: 0;
+  transition: 0.5s;
+  display: flex;
+  z-index: 1;
+  height: 100vh;
+}
+.sidenav {
+  height: 100%;
+  z-index: 1;
+  background-color: #000;
+  overflow-x: hidden;
+  padding-top: 20px;
+  width: 250px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sideNavButtons a:hover {
+  color: red !important;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  padding: 16px;
+  background-color: white;
+  width: 60px;
+  height: 100%;
+  z-index: 99999999999;
+}
+.logo{
+  width: 30px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.caption{
+   width: 100%;
+   height: 100%;
+    background-color: rgba(255,255,255,0.7);
+    top: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s;
+    
+}
+.imgContainer:hover .caption {
+    top:0;
+}
+.imgContainer{
+    overflow: hidden;
+}
+
+.invalideName,.invalideEmail,.invalidePhone,.invalideAge,.invalidePassword,.invalideRePassword{
+    display: none;
+}
+/* .navItem :hover {
+  color: red!important; 
+} */
+
+.sideNavButtons{
+  height: 40vh;
+  overflow: hidden;
+}
+
+.navItem{
+  margin-top: 40vh;
+}
+
+.sideNavButtons a:nth-child(1){
+  transition: all var(--navBarButtonTransition) ;
+}
+.sideNavButtons a:nth-child(2){
+  transition: all calc( var(--navBarButtonTransition) + 0.1s ) ;
+}
+.sideNavButtons a:nth-child(3){
+  transition: all calc( var(--navBarButtonTransition) + 0.2s )  ;
+}
+.sideNavButtons a:nth-child(4){
+  transition: all calc( var(--navBarButtonTransition) + 0.3s )  ;
+}
+.sideNavButtons a:nth-child(5){
+  transition: all calc( var(--navBarButtonTransition) + 0.4s )  ;
+}
+.sideNavButtons a:nth-child(6){
+  transition: all calc( var(--navBarButtonTransition) + 0.5s )  ;
+}

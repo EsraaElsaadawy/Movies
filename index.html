@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-black">
+    <div id="mySidenav">
+        <div class="sidenav d-flex align-content-between flex-wrap">
+            <div class="sideNavButtons">
+                <a id="nowPlaying" href="#" class="navItem text-white fs-6">Now playing</a>
+                <a id="popular" href="#" class="navItem text-white fs-6">Popular</a>
+                <a id="topRated" href="#" class="navItem text-white fs-6">Top Rated</a>
+                <a id="trending" href="#" class="navItem text-white fs-6">Trending</a>
+                <a id="upcoming" href="#" class="navItem text-white fs-6">Upcoming</a>
+                <a id="contactBtn" href="#contact" class="navItem text-white fs-6">Contact Us</a>
+            </div>
+            <div class="socialIcons">
+                <div class="d-flex">
+                    <a href=""><i class="fa-brands fa-facebook-f fs-6 text-white"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter fs-6 text-white"></i></a>
+                    <a href=""><i class="fa-solid fa-globe fs-6 text-white"></i></a>
+                </div>
+                <div>
+                    <p class="text-muted pb-5 px-3">Copyright Â© 2019 All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="main" class="d-flex align-content-between flex-wrap">
+            <div>
+                <img src="images/logo.png" alt="" class="logo">
+            </div>
+            <div>
+                <a id="openNav" style="font-size:30px;cursor:pointer;font-weight: bold;" onclick="openNav()">&#9776;</a>
+                <a id="closeNav" style="font-size:38px;cursor:pointer;font-weight: bold;"
+                    onclick="closeNav()">&times;</a>
+            </div>
+            <div class="icons">
+                <div> <i class="fa-solid fa-globe"></i></div>
+                <div> <i class="fa-solid fa-share-nodes"></i></div>
+            </div>
+        </div>
+    </div>
+
+    <section class="pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <input id="getMovies"
+                        class="form-control mb-5 text-center text-white border-0 border-bottom bg-transparent"
+                        placeholder="get movies by word...">
+                </div>
+                <div class="col-md-6">
+                    <input id="search"
+                        class="form-control mb-5 text-center  text-white border-0 border-bottom bg-transparent"
+                        placeholder="search...">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <div class="row g-4" id="movies">
+
+        </div>
+    </section>
+    <section class="contactUs container" id="contact">
+        <h2 class="text-light my-5">ContacUs...</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <input id="nameInput" type="text"
+                    class="form-control text-center bg-transparent mb-3 border-0 border-bottom"
+                    placeholder="Enter Your Name">
+                <p class="invalideName text-center text-danger ">Your Name is not valid</p>
+            </div>
+            <div class="col-md-6">
+                <input id="emailInput" type="text"
+                    class="form-control text-center bg-transparent mb-3 border-0 border-bottom"
+                    placeholder="Enter Email">
+                <p class="invalideEmail text-center text-danger ">entre valid email</p>
+            </div>
+            <div class="col-md-6">
+                <input id="phoneInput" type="number"
+                    class="form-control text-center bg-transparent mb-3 border-0 border-bottom"
+                    placeholder="Enter Phone">
+                <p class="invalidePhone text-center text-danger ">entre valid phone</p>
+            </div>
+            <div class="col-md-6">
+                <input id="ageInput" type="number"
+                    class="form-control text-center bg-transparent mb-3 border-0 border-bottom" placeholder="Enter Age">
+                <p class="invalideAge text-center text-danger ">entre valid Age</p>
+            </div>
+            <div class="col-md-6">
+                <input id="passwordInput" type="password"
+                    class="form-control text-center bg-transparent mb-3 border-0 border-bottom"
+                    placeholder="Enter Password">
+                <p class="invalidePassword text-center text-danger ">entre valid password *Minimum eight characters, at
+                    least one letter and one number:*</p>
+            </div>
+            <div class="col-md-6">
+                <input id="RepasswordInput" type="password"
+                    class="form-control text-center bg-transparent mb-3 border-0 border-bottom"
+                    placeholder="Enter RePassword">
+                <p class="invalideRePassword text-center text-danger ">entre valid Repassword</p>
+            </div>
+
+        </div>
+        <button class="btn btn-outline-danger mb-5">Submit</button>
+    </section>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
